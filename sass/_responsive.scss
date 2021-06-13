@@ -1,0 +1,552 @@
+@media all and (max-width: 767px) and (min-width: 240px) {
+    /*Global CSS Start*/
+    .col-1,
+    .col-2,
+    .col-3,
+    .col-4,
+    .col-5,
+    .col-6,
+    .col-7,
+    .col-8,
+    .col-9,
+    .col-10,
+    .col-11,
+    .col-12 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+        overflow: hidden;
+    }
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .section-header {
+        h3 {
+            font-size: 32px;
+            line-height: 44px;
+            margin-top: 15px;
+        }
+        p {
+            font-size: 16px;
+        }
+    }
+    /*Global CSS End*/
+    /*Main CSS Start*/
+    /*==Header==*/
+    /*Mobile Navigation*/
+    .header-nav {
+        position: fixed;
+        width: 100%;
+        z-index: 100;
+        background-color: $colorBlue;
+        height: 0%;
+        overflow: hidden;
+        top: 0px;
+        left: 0%;
+        transition: .3s linear all;
+        &.active {
+            height: 100%;
+        }
+        ul {
+            display: block;
+            li {
+                text-align: center;
+                a {
+                    display: block;
+                    font-size: 24px;
+                    padding-top: 15px;
+                    padding-bottom: 15px;
+                }
+                &:last-child {
+                    a {
+                        padding-right: 25px;
+                    }
+                }
+            }
+        }
+    }
+    .toggle-nav {
+        display: inline-flex;
+    }
+    .close-nav {
+        display: block;
+    }
+    /*==Hero==*/
+    .hero-content-wrapper {
+        padding-top: 170px;
+        padding-bottom: 100px;
+        h1 {
+            font-size: 36px;
+            line-height: 48px;
+        }
+    }
+    /*==Service==*/
+    .our-services {
+        padding: 80px 0px;
+    }
+    .services-content {
+        padding: 60px 30px 20px 30px;
+    }
+    .service-col-content {
+        margin-bottom: 30px;
+        h4 {
+            font-size: 18px;
+        }
+        p {
+            margin-top: 5px;
+        }
+    }
+    .service-content-row {
+        margin-top: 40px;
+    }
+    /*==Work==*/
+    .our-work {
+        padding-top: 60px;
+        padding-bottom: 50px;
+    }
+    .owl-dots {
+        margin-top: 20px !important;
+    }
+    /*==Work Alt==*/
+    .our-work-alt {
+        padding-top: 65px;
+        padding-bottom: 110px;
+        .section-header {
+            h3 {
+                line-height: 50px;
+                margin-top: 15px;
+            }
+        }
+    }
+    .work-alt-feature {
+        margin-bottom: -250px;
+        .row {
+            .col-6 {
+                .feature-col-content {
+                    max-width: 300px;
+                }
+                &:nth-child(1) {
+                    padding-right: 15px;
+                    .feature-col-content {
+                        padding-bottom: 0px;
+                    }
+                }
+                &:nth-child(2) {
+                    padding-left: 15px;
+                    .feature-col-content {
+                        padding-bottom: 25px;
+                    }
+                }
+            }
+        }
+    }
+    /*==Team==*/
+    .our-team {
+        padding-bottom: 60px;
+        .owl-dots {
+            margin-top: 0px !important;
+        }
+    }
+    /*==CTA==*/
+    .cta {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        .row {
+            text-align: center;
+            .col-9 {
+                -webkit-box-flex: 0;
+                -ms-flex: 0 0 100%;
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+            .col-3 {
+                -webkit-box-flex: 0;
+                -ms-flex: 0 0 100%;
+                flex: 0 0 100%;
+                max-width: 100%;
+                &.align-items-center {
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+    }
+    .cta-left-content {
+        h3 {
+            font-size: 38px;
+            line-height: 46px;
+        }
+        p {
+            margin-top: 15px;
+        }
+    }
+    .cta-right-content {
+        margin-top: 30px;
+    }
+    /*==Testmonial==*/
+    .testimonial {
+        padding-top: 60px;
+        padding-bottom: 70px;
+    }
+    .testimonial-slider {
+        .owl-dots {
+            margin-top: 10px !important;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            left: calc(50% - 80px);
+        }
+    }
+    .testimonial-content {
+        .img-wrapper-testimonial {
+            max-width: 100%;
+            width: 100%;
+            float: left;
+            padding-top: 0px;
+            margin: 0 auto;
+            margin-bottom: 30px;
+        }
+        .testimonial-text-wrapper {
+            width: 100%;
+            margin-left: 0px;
+        }
+    }
+    /*==Counter==*/
+    .counter {
+        padding: 45px 0px;
+    }
+    .counter-col-content {
+        margin: 24px 0px;
+        h3 {
+            font-size: 34px;
+            line-height: 56px;
+        }
+    }
+    /*==Contact==*/
+    .contact-us {
+        background-color: #FAFAFA;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .contact-col-left {
+        .form-col-6 {
+            -webkit-box-flex: 0;
+            -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+    }
+    .contact-col-right {
+        margin-top: 50px;
+        .contact-info {
+            max-width: 100%;
+        }
+    }
+    /*==Footer==*/
+    .footer-wrapper-content {
+        padding: 60px 0px;
+    }
+    .footer-nav {
+        ul {
+            li {
+                a {
+                    line-height: 26px;
+                    padding: 0px 5px;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    .social-link-icon {
+        i {
+            font-size: 20px;
+            color: #FF841B;
+            padding: 0px 10px;
+        }
+    }
+    .footer-copyright {
+        p {
+            font-size: 14px;
+        }
+    }
+    /*Main CSS End*/
+}
+
+@media all and (max-width: 991px) and (min-width: 768px) {
+    /*Global CSS Start*/
+    .container {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .section-header {
+        h3 {
+            font-size: 42px;
+            line-height: 82px;
+        }
+    }
+    .section-header {
+        p {
+            font-size: 18px;
+        }
+    }
+    /*Global CSS End*/
+    /*Main CSS Start*/
+    /*==Header==*/
+    /*Mobile Navigation*/
+    .header-nav {
+        position: fixed;
+        width: 100%;
+        z-index: 100;
+        background-color: $colorBlue;
+        height: 0%;
+        overflow: hidden;
+        top: 0px;
+        left: 0%;
+        transition: .3s linear all;
+        &.active {
+            height: 100%;
+        }
+        ul {
+            display: block;
+            li {
+                text-align: center;
+                a {
+                    display: block;
+                    font-size: 24px;
+                    padding-top: 15px;
+                    padding-bottom: 15px;
+                }
+                &:last-child {
+                    a {
+                        padding-right: 25px;
+                    }
+                }
+            }
+        }
+    }
+    .toggle-nav {
+        display: inline-flex;
+    }
+    .close-nav {
+        display: block;
+    }
+    /*==Hero==*/
+    .hero-content-wrapper {
+        padding-top: 200px;
+        padding-bottom: 120px;
+    }
+    .hero-content {
+        h1 {
+            font-size: 48px;
+            line-height: 66px;
+        }
+    }
+    /*==Service==*/
+    .service-col-content {
+        padding-left: 65px;
+        i {
+            font-size: 45px;
+        }
+    }
+    /*==Our Work Alt==*/
+    .work-alt-feature {
+        margin-bottom: -250px;
+        .row {
+            .col-6 {
+                &:nth-child(1) {
+                    padding-right: 15px;
+                }
+                &:nth-child(2) {
+                    padding-left: 15px;
+                }
+            }
+        }
+    }
+    /*==CTA==*/
+    .cta {
+        .row {
+            text-align: center;
+            .col-9 {
+                -webkit-box-flex: 0;
+                -ms-flex: 0 0 100%;
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+            .col-3 {
+                -webkit-box-flex: 0;
+                -ms-flex: 0 0 100%;
+                flex: 0 0 100%;
+                max-width: 100%;
+                &.align-items-center {
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+    }
+    .cta-left-content {
+        h3 {
+            font-size: 44px;
+            line-height: 56px;
+        }
+        p {
+            margin-top: 15px;
+        }
+    }
+    .cta-right-content {
+        margin-top: 30px;
+    }
+    /*==Testimonial==*/
+    .testimonial-content {
+        .img-wrapper-testimonial {
+            max-width: 235px;
+        }
+    }
+    .testimonial-profile-image {
+        i {
+            top: 50px;
+            right: -15px;
+            height: 50px;
+            width: 50px;
+            font-size: 16px;
+            line-height: 50px;
+        }
+    }
+    .testimonial-content {
+        .testimonial-text-wrapper {
+            width: calc(100% - 270px);
+            margin-left: 35px;
+        }
+    }
+    .testimonial-slider {
+        .owl-dots {
+            margin-top: 15px !important;
+            margin-left: 30px;
+            position: unset !important;
+            transform: unset !important;
+            left: unset !important;
+        }
+    }
+    /*==Counter==*/
+    .counter-col-content {
+        h3 {
+            font-size: 40px;
+            line-height: 70px;
+        }
+    }
+    /*==Contact us==*/
+    .social-link-icon {
+        i {
+            font-size: 20px;
+            color: #FF841B;
+            padding: 0px 10px;
+        }
+    }
+    /*==Footer==*/
+    .footer-nav {
+        ul {
+            li {
+                a {
+                    padding: 0px 8px;
+                    line-height: 34px;
+                }
+            }
+        }
+    }
+    /*Main CSS End*/
+}
+
+@media all and (max-width: 1024px) and (min-width: 992px) {
+    /*Global CSS Start*/
+    .container {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .header-nav {
+        ul {
+            li {
+                a {
+                    padding: 0px 18px;
+                }
+            }
+        }
+    }
+    /*Global CSS End*/
+    /*Main CSS Start*/
+    /*==Hero==*/
+    .hero-content-wrapper {
+        padding-top: 230px;
+        padding-bottom: 175px;
+    }
+    .hero-content {
+        h1 {
+            font-size: 60px;
+            color: #fff;
+            font-weight: 600;
+            line-height: 90px;
+            max-width: 900px;
+        }
+    }
+    /*==CTA==*/
+    .cta-left-content {
+        p {
+            margin-top: 10px;
+        }
+    }
+    /*==Testimonial==*/
+    .testimonial-content {
+        .img-wrapper-testimonial {
+            max-width: 280px;
+        }
+    }
+    .testimonial-profile-image {
+        i {
+            top: 50px;
+            right: -15px;
+            height: 50px;
+            width: 50px;
+            font-size: 16px;
+            line-height: 50px;
+        }
+    }
+    .testimonial-content {
+        .testimonial-text-wrapper {
+            width: calc(100% - 320px);
+            margin-left: 40px;
+        }
+    }
+    .testimonial-slider {
+        .owl-dots {
+            margin-top: -30px !important;
+            left: calc(50% - 60px);
+        }
+    }
+    /*==Counter==*/
+    .counter-col-content {
+        h3 {
+            font-size: 40px;
+            line-height: 70px;
+        }
+    }
+    /*==Contact us==*/
+    .social-link-icon {
+        i {
+            font-size: 20px;
+            color: #FF841B;
+            padding: 0px 10px;
+        }
+    }
+    /*==Footer==*/
+    .footer-nav {
+        ul {
+            li {
+                a {
+                    padding: 0px 8px;
+                    line-height: 34px;
+                }
+            }
+        }
+    }
+    /*Main CSS End*/
+}

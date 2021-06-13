@@ -1,0 +1,713 @@
+/*
+Template Name : Consulting Landing Page By Multidots
+Date : 12 June , 2021
+Author : Multidots
+*/
+
+@import 'reset';
+@import 'global';
+
+/*CSS Variable*/
+
+$heroBgimage: '../img/Banner@2x.png';
+$serviceBgimage: '../img/Services@2x.png';
+$ourWorkBgimage: '../img/Vision_mission@2x.png';
+$ctaBgimage: '../img/Quote@2x.png';
+$counteBgimage: '../img/Counter2@2x.png';
+$footerBgimage: '../img/Footer@2x.png';
+
+/*Header CSS Start*/
+
+.flex-nav.navbar-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.close-nav {
+    display: none;
+    text-align: center;
+    button {
+        background-color: transparent;
+        margin-top: 50px;
+        margin-bottom: 15px;
+        padding: 0px;
+        border: 0px solid $textColorwhite;
+        border-radius: 3px;
+        line-height: 12px;
+        cursor: pointer;
+        i {
+            color: $textColorwhite !important;
+            font-size: 50px;
+        }
+    }
+}
+
+.toggle-nav {
+    display: none;
+    button {
+        background-color: transparent;
+        padding: 0px;
+        border: 1px solid $textColorwhite;
+        border-radius: 3px;
+        width: 40px;
+        height: 40px;
+        line-height: 12px;
+        cursor: pointer;
+        i {
+            color: $textColorwhite !important;
+            font-size: 22px;
+        }
+    }
+}
+
+.header-nav ul {
+    display: flex;
+    li {
+        a {
+            color: $textColorwhite;
+            font-size: 14px;
+            font-weight: 500;
+            letter-spacing: .2px;
+            padding: 0px 25px;
+            transition: .3s linear all;
+            &:hover {
+                color: $colorOrange;
+            }
+        }
+        &:last-child {
+            a {
+                padding-right: 0px;
+            }
+        }
+    }
+}
+
+.position-fixed-header {
+    position: absolute;
+    width: 100%;
+    padding-top: 18px;
+}
+
+
+/*Header CSS End*/
+
+
+/*Hero CSS Start*/
+
+.hero {
+    background-image: url($heroBgimage);
+}
+
+.hero-content-wrapper {
+    padding-top: 270px;
+    padding-bottom: 187px;
+}
+
+.hero-content {
+    h1 {
+        font-size: 60px;
+        color: $textColorwhite;
+        font-weight: $fontsemibold;
+        line-height: 80px;
+        max-width: 940px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    h4 {
+        font-weight: $fontsemibold;
+        color: $colorOrange;
+        letter-spacing: 4px;
+    }
+    p {
+        color: $textColorwhite;
+        max-width: 565px;
+        width: 100%;
+        margin: 0 auto;
+        padding-top: 20px;
+        padding-bottom: 40px;
+    }
+    .btn {
+        transition: .3s linear all;
+        border: 1px solid transparent;
+        &:hover {
+            background-color: transparent;
+            border: 1px solid $colorWhite;
+            color: $colorWhite;
+        }
+    }
+}
+
+
+/*Hero CSS End*/
+
+
+/*Our Service CSS Start*/
+
+.our-services {
+    background-image: url($serviceBgimage);
+    padding: 100px 0px;
+}
+
+.services-content {
+    max-width: 970px;
+    width: 100%;
+    margin: 0 auto;
+    background: #F2F2F2;
+    padding: 42px 59px 5px 42px;
+    box-shadow: 15px 15px 40px rgba($colorBlack, 0.40);
+}
+
+.service-content-row {
+    margin-top: 20px;
+}
+
+.service-col-content {
+    display: block;
+    position: relative;
+    padding-left: 80px;
+    margin-bottom: 40px;
+    i {
+        position: absolute;
+        left: 0px;
+        font-size: 55px;
+        color: $colorOrange;
+    }
+    h4 {
+        margin: 0px;
+        font-size: $headingSizetwo;
+        line-height: normal;
+        font-weight: $fontsemibold;
+        color: $colorBlue;
+    }
+    p {
+        margin-top: 10px;
+        margin-bottom: 0px;
+        color: $textColor;
+    }
+}
+
+
+/*Our Service CSS End*/
+
+
+/*Our Work CSS Start*/
+
+.our-work {
+    padding-top: 90px;
+    padding-bottom: 100px;
+}
+
+.work-content {
+    p {
+        color: $textColor;
+        margin-bottom: 40px;
+    }
+}
+
+.slider-text {
+    padding-top: 40px;
+    h4 {
+        font-size: $headingSizetwo;
+        font-weight: $fontsemibold;
+        color: $colorBlue;
+        margin: 0px;
+    }
+    h6 {
+        font-size: $bodyTextsize;
+        font-weight: $fontnormal;
+        line-height: 34px;
+        color: $textColoralt;
+        margin-top: 0px;
+        margin-bottom: 10px;
+    }
+    p {
+        max-width: 358px;
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+
+/*Owl Carousel*/
+
+.owl-dots {
+    margin-top: 45px !important;
+    .owl-dot {
+        &.active {
+            span {
+                background-color: $colorOrange !important;
+            }
+        }
+        span {
+            background: #707070 !important;
+            width: 35px !important;
+            height: 3px !important;
+        }
+    }
+}
+
+
+/*Our Work CSS End*/
+
+
+/*Our Work Alt CSS Start*/
+
+.our-work-alt {
+    background-image: url($ourWorkBgimage);
+    padding-top: 90px;
+    padding-bottom: 135px;
+    .section-header {
+        h3 {
+            color: $textColorwhite;
+        }
+        p {
+            color: $textColorwhite;
+        }
+    }
+}
+
+.work-alt-content {
+    p {
+        color: $textColorwhite;
+    }
+}
+
+.work-alt-feature {
+    background-color: $colorWhite;
+    box-shadow: 15px 15px 40px rgba($colorBlack, 0.25);
+    position: relative;
+    z-index: 99;
+    margin-bottom: -250px;
+    .row {
+        .col-6 {
+            &:nth-child(1) {
+                padding-right: 0px;
+                .feature-col-content-wrap {
+                    position: relative;
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        transition: .2s linear all;
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        background-position: center right;
+                        background-image: url('../img/hover1.png');
+                        background-color: #f5f5f5;
+                        height: 100%;
+                        width: 100%;
+                        left: 50%;
+                        top: 50%;
+                        transform: translate(-50%, -50%);
+                        opacity: 0;
+                    }
+                    &:hover::after {
+                        opacity: 1;
+                    }
+                }
+            }
+            &:nth-child(2) {
+                padding-left: 0px;
+                .feature-col-content-wrap {
+                    position: relative;
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        transition: .2s linear all;
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        background-position: center right;
+                        background-image: url('../img/hover3.png');
+                        background-color: #f5f5f5;
+                        height: 100%;
+                        width: 100%;
+                        left: 50%;
+                        top: 50%;
+                        transform: translate(-50%, -50%);
+                        opacity: 0;
+                    }
+                    &:hover::after {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+    .feature-col-content {
+        position: relative;
+        z-index: 10;
+        max-width: 375px;
+        width: 100%;
+        margin: 0 auto;
+        height: 100%;
+        padding-top: 38px;
+        padding-bottom: 18px;
+    }
+    h4 {
+        font-size: $headingSizetwo;
+        font-weight: $fontsemibold;
+        color: $colorBlue;
+        margin-top: 7px;
+        margin-bottom: 10px;
+    }
+    p {
+        color: $textColor;
+    }
+    i {
+        font-size: 55px;
+        color: $colorOrange;
+    }
+}
+
+
+/*Our Work Alt CSS End*/
+
+
+/*Our Team CSS Start*/
+
+.our-team {
+    padding-top: 200px;
+    padding-bottom: 100px;
+}
+
+.team-content {
+    p {
+        margin-bottom: 20px;
+        color: $textColor;
+    }
+}
+
+.team-slider {
+    .slider-content {
+        &:hover .team-social-list {
+            bottom: 0px;
+        }
+    }
+}
+
+.img-wrapper {
+    position: relative;
+}
+
+.img-wrapper-social {
+    overflow: hidden;
+    .team-social-list {
+        position: absolute;
+        bottom: -80px;
+        left: 0;
+        width: 100%;
+        background-color: $colorBlue;
+        transition: .15s linear all;
+        padding: 15px 0px;
+        i {
+            font-size: 20px;
+            color: $colorOrange;
+            padding: 0px 15px;
+            transition: .2s linear all;
+        }
+        a {
+            &:hover i {
+                color: $colorWhite;
+            }
+        }
+    }
+}
+
+
+/*Our Team CSS End*/
+
+
+/*CTA CSS Start*/
+
+.cta {
+    background-image: url($ctaBgimage);
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.cta-left-content {
+    h3 {
+        font-size: $headingSizeone;
+        font-weight: $fontmedium;
+        color: $colorWhite;
+        line-height: 69px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    p {
+        color: $colorWhite;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+}
+
+.cta-right-content {
+    .btn {
+        transition: .3s linear all;
+        border: 1px solid transparent;
+        &:hover {
+            background-color: transparent;
+            border: 1px solid $colorWhite;
+            color: $colorWhite;
+        }
+    }
+}
+
+
+/*CTA Service CSS End*/
+
+
+/*Testimonial CSS Start*/
+
+.testimonial {
+    padding-top: 92px;
+    padding-bottom: 100px;
+}
+
+.testimonial-slider {
+    .owl-dots {
+        margin-top: -80px !important;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        left: calc(50% - 80px);
+    }
+}
+
+.testimonial-content {
+    margin-top: 15px;
+    display: block;
+    .img-wrapper-testimonial {
+        max-width: 340px;
+        width: 100%;
+        float: left;
+        padding-top: 0px;
+    }
+    .testimonial-text-wrapper {
+        float: left;
+        width: calc(100% - 390px);
+        margin-left: 50px;
+        padding-top: 0px;
+        h4 {
+            margin-top: -10px;
+        }
+        p {
+            margin-left: 0px;
+            max-width: 100%;
+            width: 100%;
+            color: $textColor;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.testimonial-profile-image {
+    position: relative;
+    img {
+        border: 15px solid #eaeaea;
+        border-radius: 100%;
+        overflow: hidden;
+    }
+    i {
+        position: absolute;
+        background-color: #eaeaea;
+        transform: translate(-50%, -50%) rotate(-15deg);
+        top: 60px;
+        right: 0px;
+        height: 60px;
+        width: 60px;
+        font-size: 20px;
+        border-radius: 100px;
+        transition: .3s linear all;
+        line-height: 60px;
+        text-align: center;
+        color: $colorOrange;
+    }
+}
+
+.testimonial-slider {
+    .owl-item.active {
+        i {
+            transform: translate(-50%, -50%) rotate(0deg);
+        }
+    }
+}
+
+
+/*Testimonial CSS End*/
+
+
+/*Counter CSS Start*/
+
+.counter {
+    background-image: url($counteBgimage);
+    padding: 95px 0px;
+}
+
+.counter-col-content {
+    i {
+        font-size: 55px;
+        color: $colorWhite;
+    }
+    h3 {
+        font-size: $headingSizeone;
+        font-weight: $fontsemibold;
+        color: $colorOrange;
+        margin: 0px;
+        line-height: 90px;
+    }
+    p {
+        color: $colorWhite;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+}
+
+
+/*Counter CSS End*/
+
+
+/*Contact Us CSS Start*/
+
+.contact-us {
+    background-color: #FAFAFA;
+    padding-top: 92px;
+    padding-bottom: 100px;
+    .section-header {
+        h3 {
+            color: $colorBlack;
+        }
+    }
+}
+
+.contactus-content {
+    margin-top: 10px;
+}
+
+.contact-col-left {
+    .form-control {
+        border: 1px solid #EAEAEA;
+        padding: 9px 20px;
+        border-radius: 3px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        font-family: $poppins;
+        color: $textColor;
+        line-height: 34px;
+        &::placeholder {
+            color: #C3C3C3;
+        }
+    }
+    textarea {
+        height: 183px;
+        resize: none;
+    }
+}
+
+.submit-wrapper {
+    margin-top: 15px;
+    button {
+        font-family: $poppins;
+        font-weight: $fontsemibold;
+        border: 1px solid transparent;
+        cursor: pointer;
+        transition: .3s linear all;
+        &:hover {
+            background-color: $colorWhite;
+            border: 1px solid $colorOrange;
+            color: $colorOrange;
+        }
+    }
+}
+
+.contact-col-right {
+    margin-top: 5px;
+}
+
+.contact-info {
+    margin-bottom: 30px;
+    max-width: 260px;
+    width: 100%;
+    h6 {
+        margin: 0px;
+        font-size: $bodyTextsize;
+        font-weight: $fontsemibold;
+        line-height: 34px;
+        color: $colorBlue;
+    }
+    p {
+        margin: 0px;
+        color: $textColor;
+    }
+}
+
+.social-link-icon {
+    margin-top: 5px;
+    a {
+        &:first-child i {
+            padding-left: 0px !important;
+        }
+    }
+    i {
+        font-size: 30px;
+        color: $colorOrange;
+        padding: 0px 20px;
+    }
+}
+
+
+/*Contact Us CSS End*/
+
+
+/*Footer CSS Start*/
+
+footer {
+    background-image: url($footerBgimage);
+    @include bgProperty;
+}
+
+.footer-wrapper-content {
+    padding: 95px 0px;
+}
+
+.footer-logo {
+    margin-bottom: 30px;
+}
+
+.footer-nav {
+    ul {
+        display: block;
+        max-width: 100%;
+        margin: 0 auto;
+        li {
+            display: inline-block;
+            a {
+                color: #C6C6C6;
+                font-weight: $fontnormal;
+                line-height: 36px;
+                padding: 0px 10px;
+            }
+        }
+    }
+}
+
+.footer-copyright {
+    p {
+        color: #C6C6C6;
+        font-weight: $fontnormal;
+        margin-top: 25px;
+        margin-bottom: 0px;
+        a {
+            color: $colorOrange;
+        }
+    }
+}
+
+
+/*Footer CSS End*/
+
+
+/*Media Query Start*/
+
+@import 'responsive';
+
+/*Media Query End*/

@@ -1,0 +1,275 @@
+/*Global CSS Start*/
+
+
+/*CSS Variable*/
+
+$poppins: 'Poppins',
+sans-serif;
+$colorBlue: #001A53;
+$colorOrange: #FF841B;
+$colorBlack: #000;
+$colorWhite: #fff;
+$textColor: #676767;
+$textColoralt: #9B9B9B;
+$textColorwhite: #fff;
+$headingSizeone: 50px;
+$headingSizetwo: 22px;
+$bodyTextsize: 16px;
+$lineheightmain: 26px;
+$fontnormal: 400;
+$fontmedium: 500;
+$fontsemibold: 600;
+*,
+ ::after,
+ ::before {
+    box-sizing: border-box;
+}
+
+* {
+    padding: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    font-family: $poppins;
+    overflow-x: hidden;
+    font-size: $bodyTextsize;
+    line-height: $lineheightmain;
+}
+
+p {
+    font-size: $bodyTextsize;
+    line-height: $lineheightmain;
+}
+
+body {
+    position: relative;
+    padding: 0px !important;
+    margin: 0px !important;
+}
+
+a:focus,
+button:focus,
+input:focus,
+textarea:focus {
+    outline: none;
+}
+
+.container {
+    max-width: 1170px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.row,
+.form-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.align-items-center {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12,
+.form-col-6,
+.form-col-12 {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.col-1 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 8.333333%;
+    flex: 0 0 8.333333%;
+    max-width: 8.333333%;
+}
+
+.col-2 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 16.666667%;
+    flex: 0 0 16.666667%;
+    max-width: 16.666667%;
+}
+
+.col-3 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+
+.col-4 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+}
+
+.col-5 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 41.666667%;
+    flex: 0 0 41.666667%;
+    max-width: 41.666667%;
+}
+
+.col-6,
+.form-col-6 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.col-7 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 58.333333%;
+    flex: 0 0 58.333333%;
+    max-width: 58.333333%;
+}
+
+.col-8 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 66.666667%;
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%;
+}
+
+.col-9 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 75%;
+    flex: 0 0 75%;
+    max-width: 75%;
+}
+
+.col-10 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 83.333333%;
+    flex: 0 0 83.333333%;
+    max-width: 83.333333%;
+}
+
+.col-11 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 91.666667%;
+    flex: 0 0 91.666667%;
+    max-width: 91.666667%;
+}
+
+.col-12,
+.form-col-12 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+a,
+button {
+    text-decoration: none;
+}
+
+@mixin bgProperty {
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat !important;
+}
+
+section {
+    @include bgProperty;
+}
+
+input,
+textarea {
+    width: 100%;
+    border: 0px;
+}
+
+
+/*Section Header*/
+
+.section-header {
+    h3 {
+        font-size: $headingSizeone;
+        font-weight: $fontmedium;
+        color: $colorBlue;
+        line-height: 90px;
+        margin: 0;
+    }
+    p {
+        font-size: $headingSizetwo;
+        font-weight: $fontsemibold;
+        color: $textColor;
+        margin: 0px 0px -10px 0px;
+    }
+}
+
+
+/*Button Css*/
+
+.btn-inline-block {
+    padding: 12px 30px;
+    text-align: center;
+    font-size: $bodyTextsize;
+    color: $textColorwhite;
+    line-height: $lineheightmain;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: inline-block;
+    border-radius: 3px;
+}
+
+.btn-orange {
+    background-color: $colorOrange;
+}
+
+
+/*Global CSS End*/
