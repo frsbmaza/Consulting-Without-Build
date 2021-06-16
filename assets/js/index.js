@@ -64,5 +64,10 @@ jQuery(document).ready(function($) {
     $('.close-nav').click(function() {
         $('.header-nav').removeClass('active');
         $('html').css('overflow', 'scroll');
+    });
+
+    $('nav li').click(function() {
+        $('.header-nav').removeClass('active');
+        $('html').css('overflow', 'scroll');
     })
 });
